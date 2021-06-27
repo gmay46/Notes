@@ -1,0 +1,21 @@
+Docker notes
+
+====================================================================
+get into docker container
+
+\*Assumes Linux container
+docker exec -it <container name/ID> /bin/bash
+
+on the container CLI use exit to leave the container
+====================================================================
+
+====================================================================
+Pull files from active container
+
+\*Assumes Linux container
+docker cp <container name/ID>:/path/to/file /path/to/destination/...
+
+Push files to active container
+docker cp /path/to/destination/... <container name/ID>:/path/to/file 
+
+====================================================================
